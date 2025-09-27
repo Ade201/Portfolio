@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adedamola Olapade | Resume</title>
+  <style>
+    /* Global Styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f4f6f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    a { text-decoration: none; color: inherit; }
+    h2 {
+      color: #0d47a1;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #0d47a1;
+      display: inline-block;
+      padding-bottom: .3rem;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #0d47a1, #1976d2);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    header h1 { font-size: 3rem; margin-bottom: .5rem; animation: fadeInDown 1.5s; }
+    header p { font-size: 1.2rem; animation: fadeInUp 1.5s; }
+
+    /* Main Layout */
+    main { max-width: 1000px; margin: auto; padding: 2rem; }
+    section { margin-bottom: 3rem; }
+
+    /* About */
+    #about p { font-size: 1.1rem; }
+
+    /* Skills */
+    .skill { margin-bottom: 1rem; }
+    .skill-name { font-weight: bold; margin-bottom: .3rem; }
+    .progress {
+      background: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      height: 12px;
+      background: linear-gradient(90deg, #0d47a1, #1976d2);
+      width: 0;
+      border-radius: 20px;
+      transition: width 2s ease-in-out;
+    }
+
+    /* Timeline */
+    .timeline {
+      position: relative;
+      margin: 2rem 0;
+      padding-left: 30px;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #0d47a1;
+      border-radius: 2px;
+    }
+    .timeline-item {
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -2px;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      background: #1976d2;
+      border-radius: 50%;
+    }
+    .timeline-item h3 { margin-bottom: .3rem; color: #0d47a1; }
+
+    /* Footer */
+    footer {
+      background: #0d47a1;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    footer a { color: #fff; margin: 0 .5rem; transition: color .3s; }
+    footer a:hover { color: #ffeb3b; }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 { font-size: 2rem; }
+      header p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Adedamola Olapade</h1>
+    <p>Full-Stack Developer | Funnel & Smart Contract Engineer | Creative Designer</p>
+    <p>Email: <a href="mailto:damolaolapade@yahoo.com" style="color:#ffeb3b;">damolaolapade@yahoo.com</a> | WhatsApp: +1 (310) 404-9290</p>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m a passionate Full-Stack Developer, Funnel & Smart Contract Engineer, and Creative Designer. I specialize in building conversion-focused systems, Web3 solutions, and engaging book trailers/mockups for authors. My motivation is to create technology and designs that solve problems, drive growth, and inspire people.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill">
+        <div class="skill-name">Full-Stack Development</div>
+        <div class="progress"><div class="progress-bar" data-skill="90%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">Smart Contracts & Web3</div>
+        <div class="progress"><div class="progress-bar" data-skill="85%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">Automation & Funnels</div>
+        <div class="progress"><div class="progress-bar" data-skill="80%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">Creative Design</div>
+        <div class="progress"><div class="progress-bar" data-skill="75%"></div></div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Freelance Funnel & Smart Contract Developer</h3>
+          <p>(2023 – Present) – Delivered custom automation systems and blockchain solutions.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Book Trailer & Mockup Designer</h3>
+          <p>(2023 – Present) – Created cinematic trailers and 3D mockups for authors.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Shopify Expert & Web Developer</h3>
+          <p>(2022 – Present) – Built optimized stores and customer experiences.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>Smart Contract & NFT Services – Secure, gas-optimized NFT minting contracts and Web3 marketplace integrations.</li>
+        <li>Sales Funnel Automation for DANZAS – Built a fully automated onboarding and membership system.</li>
+        <li>Book Trailers & 3D Mockups – Boosted author visibility and ad performance.</li>
+        <li>Shopify & E-commerce Development – Designed optimized stores with automated funnels.</li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <p>Currently learning advanced Full-Stack Development with focus on AI & blockchain integration. Aspiring Aeronautical Engineer with deep passion for technology, trading, and problem-solving.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Connect with me: 
+      <a href="mailto:damolaolapade@yahoo.com">Email</a> | 
+      <a href="https://github.com/Ade201" target="_blank">GitHub</a> | 
+      <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+    </p>
+    <p>&copy; 2025 Adedamola Olapade</p>
+  </footer>
+
+  <!-- JS for Skill Animation -->
+  <script>
+    const progressBars = document.querySelectorAll(".progress-bar");
+    window.addEventListener("scroll", () => {
+      progressBars.forEach(bar => {
+        const rect = bar.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50) {
+          bar.style.width = bar.getAttribute("data-skill");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
