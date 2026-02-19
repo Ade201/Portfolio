@@ -75,7 +75,7 @@ nav > a {
   transition: 0.3s;
   opacity: 10px;
   animation: nav 0.9s ease forwards;
-  animation-delay: 0.2s;
+  animation-delay: calc(0.2s * var(..1));
 }
 @keyframes nav {
   0% {
