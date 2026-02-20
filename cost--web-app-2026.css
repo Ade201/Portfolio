@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #141c2f;
+    color: #e6edf3;
+    line-height: 1.9;
+}
+/* BACK BUTTON */
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  transition: color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+}
+/* Hover */
+.back-btn:hover {
+  color: var(--text);
+  background: rgba(198, 43, 111, 0.15);
+  transform: translateX(-3px);
+}
+
+/* Active (click) */
+.back-btn:active {
+  transform: translateX(-6px) scale(0.98);
+  background: rgba(198, 43, 111, 0.25);
+}
+
+/* Keyboard accessibility */
+.back-btn:focus-visible {
+  outline: 2px solid rgba(198, 43, 111, 0.6);
+  outline-offset: 4px;
+}
+
+.hero {
+    padding: 100px 20px 60px;
+    text-align: center;
+    background: linear-gradient(180deg, #1a2238, #141c2f);
+}
+
+.hero h1 {
+    font-size: 2.7rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.subtitle {
+    color: #9fb3c8;
+    margin-top: 15px;
+}
+
+.hero-image img {
+    margin-top: 40px;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.article-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.article-card {
+    background: rgba(255,255,255,0.03);
+    padding: 60px;
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+}
+
+.article-card h2 {
+    margin-top: 60px;
+    color: #4da3ff;
+}
+
+.article-card h3 {
+    margin-top: 40px;
+}
+
+.highlight {
+    background: rgba(77,163,255,0.1);
+    padding: 20px;
+    border-left: 4px solid #4da3ff;
+    border-radius: 8px;
+}
+
+.pricing-grid {
+    display: grid;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.pricing-box {
+    padding: 30px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 14px;
+    transition: 0.4s;
+}
+
+.pricing-box:hover {
+    transform: translateY(-6px);
+}
+
+.price {
+    display: block;
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #4da3ff;
+}
+
+.image-block img {
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 14px;
+}
+
+.cta-section {
+    margin: 80px 0;
+    text-align: center;
+}
+
+.cta-card {
+    background: linear-gradient(135deg, #1f2a44, #18223a);
+    padding: 60px;
+    border-radius: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    margin: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.primary {
+    background: #4da3ff;
+    color: #fff;
+}
+
+.secondary {
+    border: 2px solid #4da3ff;
+    color: #4da3ff;
+}
