@@ -404,6 +404,7 @@ button:hover {
 .section-5 > h1 {
   font-size: 3.5rem;
   text-align: center;
+  color: rgba(255, 255, 255, 0.676);
 }
 .section-5 {
   padding: 100px 2%;

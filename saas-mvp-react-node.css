@@ -1,9 +1,8 @@
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #141c2f;
-    color: #e6edf3;
-    line-height: 1.9;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 /* BACK BUTTON */
 .back-btn {
@@ -36,12 +35,6 @@ body {
   outline: 2px solid rgba(198, 43, 111, 0.6);
   outline-offset: 4px;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
 
 body {
   background: linear-gradient(135deg, #0f172a, #111827);
@@ -49,7 +42,6 @@ body {
   line-height: 1.8;
 }
 
-/* Scroll Progress Bar */
 .progress-bar {
   height: 4px;
   background: linear-gradient(90deg, #3b82f6, #8b5cf6);
@@ -60,14 +52,13 @@ body {
   z-index: 9999;
 }
 
-/* Hero */
-.blog-hero {
+.hero {
   padding: 120px 20px 60px;
   text-align: center;
 }
 
-.blog-hero h1 {
-  font-size: 3rem;
+.hero h1 {
+  font-size: 2.8rem;
   font-weight: 800;
   background: linear-gradient(90deg, #3b82f6, #8b5cf6);
   -webkit-background-clip: text;
@@ -77,11 +68,9 @@ body {
 .subtitle {
   margin-top: 15px;
   color: #94a3b8;
-  font-size: 1.2rem;
 }
 
-/* Container */
-.blog-container {
+.container {
   max-width: 900px;
   margin: auto;
   padding: 40px 20px;
@@ -91,39 +80,47 @@ body {
   box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
-/* Sections */
-.blog-section {
+.section {
   margin-bottom: 60px;
   animation: fadeUp 1s ease forwards;
 }
 
-.blog-section h2 {
-  margin-bottom: 20px;
-  font-size: 1.8rem;
+.section h2 {
   color: #3b82f6;
+  margin-bottom: 20px;
 }
 
-.blog-section h3 {
+.highlight {
+  background: rgba(59,130,246,0.1);
+  padding: 20px;
+  border-radius: 12px;
   margin-top: 20px;
-  color: #8b5cf6;
 }
 
-.blog-section ul {
-  padding-left: 20px;
+.image-placeholder {
+  border: 2px dashed #3b82f6;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  color: #94a3b8;
+  margin-bottom: 40px;
 }
 
-.blog-section li {
-  margin-bottom: 10px;
+.code-block {
+  background: #0f172a;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+  overflow-x: auto;
 }
 
-/* Cost Cards */
 .cost-card {
   background: rgba(255,255,255,0.05);
-  padding: 25px;
-  border-radius: 15px;
+  padding: 20px;
+  border-radius: 12px;
   margin-bottom: 20px;
-  transition: 0.3s;
   border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.3s;
 }
 
 .cost-card:hover {
@@ -131,41 +128,14 @@ body {
   box-shadow: 0 10px 30px rgba(59,130,246,0.3);
 }
 
-.price {
-  font-weight: bold;
-  color: #22d3ee;
-}
-
-/* Highlight */
-.highlight {
-  background: rgba(59,130,246,0.1);
-  padding: 30px;
-  border-radius: 15px;
-}
-
-/* Image Placeholder */
-.image-placeholder {
-  border: 2px dashed #3b82f6;
-  padding: 10px;
-  text-align: center;
-  border-radius: 15px;
-  color: #94a3b8;
-}
-
-/* CTA */
-.cta-section {
+.cta {
   text-align: center;
   padding: 80px 20px;
   background: linear-gradient(135deg, #1e293b, #0f172a);
   margin-top: 80px;
 }
 
-.cta-section h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-
-.cta-buttons {
+.buttons {
   margin-top: 30px;
 }
 
@@ -192,7 +162,6 @@ body {
   transform: translateY(-3px);
 }
 
-/* Animation */
 @keyframes fadeUp {
   from {
     opacity: 0;
