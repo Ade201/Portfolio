@@ -36,116 +36,170 @@ body {
   outline: 2px solid rgba(198, 43, 111, 0.6);
   outline-offset: 4px;
 }
-
-.hero {
-    padding: 100px 20px 60px;
-    text-align: center;
-    background: linear-gradient(180deg, #1a2238, #141c2f);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-.hero h1 {
-    font-size: 2.7rem;
-    max-width: 800px;
-    margin: auto;
+body {
+  background: linear-gradient(135deg, #0f172a, #111827);
+  color: #e5e7eb;
+  line-height: 1.8;
+}
+
+/* Scroll Progress Bar */
+.progress-bar {
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  width: 0%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+/* Hero */
+.blog-hero {
+  padding: 120px 20px 60px;
+  text-align: center;
+}
+
+.blog-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .subtitle {
-    color: #9fb3c8;
-    margin-top: 15px;
+  margin-top: 15px;
+  color: #94a3b8;
+  font-size: 1.2rem;
 }
 
-.hero-image img {
-    margin-top: 40px;
-    max-width: 800px;
-    width: 100%;
-    border-radius: 16px;
+/* Container */
+.blog-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
-.article-container {
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 0 20px;
+/* Sections */
+.blog-section {
+  margin-bottom: 60px;
+  animation: fadeUp 1s ease forwards;
 }
 
-.article-card {
-    background: rgba(255,255,255,0.03);
-    padding: 60px;
-    border-radius: 18px;
-    backdrop-filter: blur(10px);
+.blog-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #3b82f6;
 }
 
-.article-card h2 {
-    margin-top: 60px;
-    color: #4da3ff;
+.blog-section h3 {
+  margin-top: 20px;
+  color: #8b5cf6;
 }
 
-.article-card h3 {
-    margin-top: 40px;
+.blog-section ul {
+  padding-left: 20px;
 }
 
-.highlight {
-    background: rgba(77,163,255,0.1);
-    padding: 20px;
-    border-left: 4px solid #4da3ff;
-    border-radius: 8px;
+.blog-section li {
+  margin-bottom: 10px;
 }
 
-.pricing-grid {
-    display: grid;
-    gap: 30px;
-    margin-top: 40px;
+/* Cost Cards */
+.cost-card {
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.1);
 }
 
-.pricing-box {
-    padding: 30px;
-    background: rgba(255,255,255,0.04);
-    border-radius: 14px;
-    transition: 0.4s;
-}
-
-.pricing-box:hover {
-    transform: translateY(-6px);
+.cost-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(59,130,246,0.3);
 }
 
 .price {
-    display: block;
-    font-size: 1.2rem;
-    margin: 15px 0;
-    color: #4da3ff;
+  font-weight: bold;
+  color: #22d3ee;
 }
 
-.image-block img {
-    width: 100%;
-    margin: 30px 0;
-    border-radius: 14px;
+/* Highlight */
+.highlight {
+  background: rgba(59,130,246,0.1);
+  padding: 30px;
+  border-radius: 15px;
 }
 
+/* Image Placeholder */
+.image-placeholder {
+  border: 2px dashed #3b82f6;
+  padding: 60px;
+  text-align: center;
+  border-radius: 15px;
+  color: #94a3b8;
+}
+
+/* CTA */
 .cta-section {
-    margin: 80px 0;
-    text-align: center;
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  margin-top: 80px;
 }
 
-.cta-card {
-    background: linear-gradient(135deg, #1f2a44, #18223a);
-    padding: 60px;
-    border-radius: 20px;
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cta-buttons {
+  margin-top: 30px;
 }
 
 .btn {
-    display: inline-block;
-    padding: 14px 30px;
-    margin: 15px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin: 10px;
+  display: inline-block;
+  transition: 0.3s;
 }
 
 .primary {
-    background: #4da3ff;
-    color: #fff;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  color: white;
 }
 
 .secondary {
-    border: 2px solid #4da3ff;
-    color: #4da3ff;
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
